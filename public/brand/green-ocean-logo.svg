@@ -1,0 +1,11 @@
+<!-- LOGO PROVISÓRIO: substitua pelo logo oficial da Green Ocean (versão clara). -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 120" width="320" height="120">
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M58 22c-20 4-32 22-28 42 16-2 30-14 32-32 0-4-1-7-4-10Z" fill="#4a7f5f"/>
+    <path d="M34 62c8-10 16-20 24-38" stroke="#f5f2e9" stroke-width="2"/>
+    <path d="M14 82c10-8 20-8 30 0s20 8 30 0 20-8 30 0" stroke="#c2d2d1" stroke-width="5"/>
+    <path d="M24 98c8-6 16-6 24 0s16 6 24 0 16-6 24 0" stroke="#c2d2d1" stroke-width="3" opacity=".6"/>
+  </g>
+  <text x="120" y="60" fill="#f5f2e9" font-family="Georgia, 'Times New Roman', serif" font-size="38" font-weight="700" letter-spacing="0.5">Green</text>
+  <text x="120" y="98" fill="#c2d2d1" font-family="Georgia, 'Times New Roman', serif" font-size="38" font-style="italic" letter-spacing="0.5">Ocean</text>
+</svg>
