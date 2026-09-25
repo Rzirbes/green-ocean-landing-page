@@ -2,8 +2,8 @@
  * Configuração central da landing page de pré-lançamento.
  *
  * - WhatsApp e Instagram vêm de variáveis de ambiente (veja `.env.example`).
- * - O logo é um arquivo em `public/brand/`; troque o arquivo e ajuste
- *   `src`, `width` e `height` abaixo se o formato mudar.
+ * - O logo é um arquivo em `public/brand/`; se trocar o arquivo, ajuste
+ *   `src`, `width` e `height` abaixo.
  */
 
 function readEnv(value: string | undefined): string | null {
@@ -34,14 +34,15 @@ export const siteConfig = {
   instagramHandle: readEnv(process.env.INSTAGRAM_HANDLE),
 
   /**
-   * Logo provisório. Substitua `public/brand/green-ocean-logo.svg` pelo logo
-   * oficial (versão clara, para fundo azul profundo). Para PNG/WebP, aponte
-   * `src` para o novo arquivo e informe as dimensões reais em pixels.
+   * Logo oficial, versão clara com fundo transparente (para o azul profundo).
+   * Gerado a partir de `public/brand/green-ocean-logo-2.svg`, sem espaço vazio
+   * em volta. Para trocar, aponte `src` para o novo arquivo e informe a
+   * proporção real em `width`/`height` (para SVG, os valores do viewBox).
    */
   logo: {
-    src: "/brand/green-ocean-logo-3.jpeg",
-    width: 320,
-    height: 120,
-    alt: "Green Ocean",
+    src: "/brand/green-ocean-logo-light.svg",
+    width: 673,
+    height: 427,
+    alt: "Green Ocean — fresh food, your way",
   },
 } as const;
