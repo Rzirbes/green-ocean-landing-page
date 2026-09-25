@@ -34,10 +34,10 @@ export default function Home() {
                 width={logo.width}
                 height={logo.height}
                 preload
-                className="h-auto w-36 sm:w-44"
+                className="h-auto w-56 sm:w-64 lg:w-72"
               />
 
-              <p className="mt-8 text-xs font-bold tracking-[0.28em] text-mist sm:mt-12 sm:text-sm">
+              <p className="mt-7 text-xs font-bold tracking-[0.28em] text-mist sm:mt-10 sm:text-sm">
                 {siteConfig.city.toUpperCase()} · <LaunchDate />
               </p>
 
@@ -105,7 +105,7 @@ export default function Home() {
             alt={logo.alt}
             width={logo.width}
             height={logo.height}
-            className="h-auto w-28"
+            className="h-auto w-40"
           />
 
           <div className="space-y-1 text-sm text-mist">

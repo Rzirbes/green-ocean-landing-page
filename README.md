@@ -19,7 +19,7 @@ Verificações: `npm run lint` e `npm run build`.
 | Número do WhatsApp | `WHATSAPP_NUMBER` no `.env.local` (ou nas variáveis da hospedagem). Somente dígitos, com DDI 55 + DDD. Sem ele, o botão fica desabilitado. |
 | Mensagem do WhatsApp | `src/config/site.ts` → `whatsapp.message` |
 | Instagram (opcional) | `INSTAGRAM_HANDLE` no `.env.local`. Vazio = convite não aparece no rodapé. |
-| Logo | `public/brand/green-ocean-logo.svg` (provisório) + `logo` em `src/config/site.ts` |
+| Logo | `public/brand/green-ocean-logo-light.svg` (versão clara, fundo transparente) + `logo` em `src/config/site.ts` |
 | Cores | `src/app/globals.css` (bloco `@theme`) |
 
 As variáveis são lidas no build: após alterá-las, gere um novo build/deploy.
