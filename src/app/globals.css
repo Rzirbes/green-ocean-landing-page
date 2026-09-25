@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  /* Paleta Green Ocean */
+  --color-ocean: #0f2a44;
+  --color-leaf: #4a7f5f;
+  --color-mist: #c2d2d1;
+  --color-cream: #f5f2e9;
+
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-heading), Georgia, serif;
+}
+
+html {
+  background: var(--color-ocean);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ocean);
+}
+
+::selection {
+  background: var(--color-mist);
+  color: var(--color-ocean);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .float-slow {
+    animation: float-slow 7s ease-in-out infinite;
+  }
+}
+
+@keyframes float-slow {
+  50% {
+    transform: translateY(-8px) rotate(4deg);
+  }
+}
