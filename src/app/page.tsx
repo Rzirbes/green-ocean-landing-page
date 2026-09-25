@@ -80,14 +80,14 @@ export default function Home() {
 
             <div className="max-w-prose space-y-5 text-lg leading-relaxed text-ocean/90 sm:text-xl">
               <p>Então a gente pode contar um pouquinho mais.</p>
-              <p>
+              {/* <p>
                 Tem uma hora do dia que todo mundo conhece: a manhã já passou, a
                 fome bateu e começa aquela pergunta:
               </p>
               <blockquote className="border-l-4 border-leaf pl-5 font-display text-2xl italic text-ocean sm:text-3xl">
                 “O que eu vou comer hoje?”
               </blockquote>
-              <p>A Green Ocean tem uma novidade chegando para esse momento.</p>
+              <p>A Green Ocean tem uma novidade chegando para esse momento.</p> */}
 
               <p className="pt-2 font-display text-5xl font-semibold text-leaf sm:text-6xl">
                 <LaunchDate />
