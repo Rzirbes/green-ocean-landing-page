@@ -30,7 +30,7 @@ export const siteConfig = {
     message: "Oi! Vi a Green Ocean e quero receber a primeira pista",
   },
 
-  /** Opcional: defina INSTAGRAM_HANDLE para exibir o convite no rodapé. */
+  /** Opcional: defina INSTAGRAM_HANDLE para exibir o ícone do Instagram no rodapé. */
   instagramHandle: readEnv(process.env.INSTAGRAM_HANDLE),
 
   /**

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import {
+  InstagramIcon,
   Leaf,
   OrganicComposition,
   WaveDivider,
@@ -12,7 +13,9 @@ import { normalizeInstagramHandle } from "@/lib/links";
 const instagram = normalizeInstagramHandle(siteConfig.instagramHandle);
 
 function LaunchDate() {
-  return <time dateTime={siteConfig.launch.iso}>{siteConfig.launch.label}</time>;
+  return (
+    <time dateTime={siteConfig.launch.iso}>{siteConfig.launch.label}</time>
+  );
 }
 
 export default function Home() {
@@ -87,7 +90,7 @@ export default function Home() {
               <p>A Green Ocean tem uma novidade chegando para esse momento.</p>
 
               <p className="pt-2 font-display text-5xl font-semibold text-leaf sm:text-6xl">
-                <LaunchDate /> <span aria-hidden="true">🌊</span>
+                <LaunchDate />
               </p>
 
               <div className="pt-4">
@@ -99,7 +102,7 @@ export default function Home() {
       </main>
 
       <footer className="bg-ocean px-5 py-10 text-cream sm:px-8">
-        <div className="mx-auto flex max-w-6xl flex-col items-center gap-5 text-center sm:flex-row sm:justify-between sm:text-left">
+        <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 text-center sm:flex-row sm:justify-between sm:text-left">
           <Image
             src={logo.src}
             alt={logo.alt}
@@ -108,19 +111,18 @@ export default function Home() {
             className="h-auto w-40"
           />
 
-          <div className="space-y-1 text-sm text-mist">
+          <div className="flex flex-col items-center gap-3 sm:items-end">
             {instagram && (
-              <p>
-                Acompanha o lançamento no Instagram:{" "}
-                <a
-                  href={instagram.url}
-                  className="rounded font-semibold text-cream underline decoration-leaf decoration-2 underline-offset-4 hover:decoration-mist focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-mist"
-                >
-                  {instagram.handle}
-                </a>
-              </p>
+              <a
+                href={instagram.url}
+                aria-label="Instagram da Green Ocean"
+                title={instagram.handle}
+                className="inline-flex size-12 items-center justify-center rounded-full text-cream transition-colors hover:bg-cream/10 hover:text-mist focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mist motion-reduce:transition-none"
+              >
+                <InstagramIcon className="size-7" />
+              </a>
             )}
-            <p>
+            <p className="text-sm text-mist">
               © {new Date().getFullYear()} {siteConfig.name} · {siteConfig.city}
             </p>
           </div>
