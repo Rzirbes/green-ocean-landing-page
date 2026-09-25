@@ -28,11 +28,7 @@ type WhatsAppButtonProps = {
 };
 
 export function WhatsAppButton({ variant = "light" }: WhatsAppButtonProps) {
-  const label = (
-    <>
-      QUERO RECEBER A PISTA <span aria-hidden="true">👀</span>
-    </>
-  );
+  const label = "QUERO RECEBER A PISTA";
 
   if (!whatsappUrl) {
     return (

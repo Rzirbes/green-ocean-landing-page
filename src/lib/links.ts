@@ -12,7 +12,7 @@ export function buildWhatsAppUrl(
   if (digits.length === 10 || digits.length === 11) digits = `55${digits}`;
   // DDI + DDD + número: no mínimo 10 dígitos, no máximo 15 (padrão E.164).
   if (digits.length < 10 || digits.length > 15) return null;
-  return `https://wa.me/${digits}?text=${encodeURIComponent(message)}`;
+  return `https://wa.me/${digits}?text=${encodeURIComponent(message.trim())}`;
 }
 
 export function normalizeInstagramHandle(handle: string | null) {
