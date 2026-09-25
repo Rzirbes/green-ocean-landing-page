@@ -27,7 +27,7 @@ export const siteConfig = {
      * estiver definido, o botão fica desabilitado e nenhum contato é inventado.
      */
     number: readEnv(process.env.WHATSAPP_NUMBER),
-    message: "Oi! Vi a Green Ocean e quero receber a primeira pista 👀",
+    message: "Oi! Vi a Green Ocean e quero receber a primeira pista",
   },
 
   /** Opcional: defina INSTAGRAM_HANDLE para exibir o convite no rodapé. */
