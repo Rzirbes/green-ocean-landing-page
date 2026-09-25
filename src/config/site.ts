@@ -39,7 +39,7 @@ export const siteConfig = {
    * `src` para o novo arquivo e informe as dimensões reais em pixels.
    */
   logo: {
-    src: "/brand/green-ocean-logo.svg",
+    src: "/brand/green-ocean-logo-3.jpeg",
     width: 320,
     height: 120,
     alt: "Green Ocean",
