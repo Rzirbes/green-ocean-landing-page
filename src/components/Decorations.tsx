@@ -37,14 +37,28 @@ export function WaveLines({ className }: Props) {
       stroke="currentColor"
       strokeLinecap="round"
     >
-      <path d="M4 18c19-14 38-14 58 0s39 14 58 0 39-14 58 0 39 14 58 0" strokeWidth="5" />
-      <path d="M4 42c19-14 38-14 58 0s39 14 58 0 39-14 58 0 39 14 58 0" strokeWidth="3" strokeOpacity=".55" />
+      <path
+        d="M4 18c19-14 38-14 58 0s39 14 58 0 39-14 58 0 39 14 58 0"
+        strokeWidth="5"
+      />
+      <path
+        d="M4 42c19-14 38-14 58 0s39 14 58 0 39-14 58 0 39 14 58 0"
+        strokeWidth="3"
+        strokeOpacity=".55"
+      />
     </svg>
   );
 }
 
 /** Onda que faz a transição do azul da abertura para o creme da seção seguinte. */
-export function WaveDivider({ className }: Props) {
+type WaveDividerProps = Props & {
+  bottomColor?: "cream" | "ocean";
+};
+
+export function WaveDivider({
+  className,
+  bottomColor = "cream",
+}: WaveDividerProps) {
   return (
     <svg
       viewBox="0 0 1440 120"
@@ -60,7 +74,9 @@ export function WaveDivider({ className }: Props) {
       />
       <path
         d="M0 88c160-30 300-34 460-8s300 44 460 20 320-52 520-24v44H0Z"
-        fill="var(--color-cream)"
+        fill={
+          bottomColor === "ocean" ? "var(--color-ocean)" : "var(--color-cream)"
+        }
       />
     </svg>
   );
@@ -69,7 +85,10 @@ export function WaveDivider({ className }: Props) {
 /** Composição orgânica usada para ocupar o espaço lateral em telas maiores. */
 export function OrganicComposition({ className }: Props) {
   return (
-    <div className={`relative aspect-square ${className ?? ""}`} aria-hidden="true">
+    <div
+      className={`relative aspect-square ${className ?? ""}`}
+      aria-hidden="true"
+    >
       <div className="absolute inset-[6%] rounded-[58%_42%_47%_53%/49%_58%_42%_51%] bg-leaf/85" />
       <div className="absolute inset-[18%_4%_2%_22%] rounded-[43%_57%_62%_38%/55%_41%_59%_45%] bg-mist/25" />
       <div className="absolute inset-[30%] rounded-full border-2 border-dashed border-cream/40" />

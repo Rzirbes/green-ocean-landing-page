@@ -62,46 +62,11 @@ export default function Home() {
 
           <WaveDivider className="absolute inset-x-0 bottom-0 h-16 w-full sm:h-24" />
         </section>
-
-        {/* Curiosidade */}
-        <section
-          aria-labelledby="curiosidade"
-          className="relative overflow-hidden px-5 py-16 sm:px-8 sm:py-24"
-        >
-          <Leaf className="absolute -left-8 top-10 w-20 -rotate-[25deg] text-leaf/15 sm:w-28" />
-
-          <div className="relative mx-auto grid max-w-6xl gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
-            <h2
-              id="curiosidade"
-              className="max-w-[20ch] text-balance font-display text-3xl font-semibold leading-tight sm:text-4xl lg:text-5xl"
-            >
-              Tu chegou até aqui antes de todo mundo.
-            </h2>
-
-            <div className="max-w-prose space-y-5 text-lg leading-relaxed text-ocean/90 sm:text-xl">
-              <p>Então a gente pode contar um pouquinho mais.</p>
-              {/* <p>
-                Tem uma hora do dia que todo mundo conhece: a manhã já passou, a
-                fome bateu e começa aquela pergunta:
-              </p>
-              <blockquote className="border-l-4 border-leaf pl-5 font-display text-2xl italic text-ocean sm:text-3xl">
-                “O que eu vou comer hoje?”
-              </blockquote>
-              <p>A Green Ocean tem uma novidade chegando para esse momento.</p> */}
-
-              <p className="pt-2 font-display text-5xl font-semibold text-leaf sm:text-6xl">
-                <LaunchDate />
-              </p>
-
-              <div className="pt-4">
-                <WhatsAppButton variant="dark" />
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
 
       <footer className="bg-ocean px-5 py-10 text-cream sm:px-8">
+        <WaveDivider className="absolute inset-x-0 bottom-0 h-16 w-full sm:h-24" />
+
         <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 text-center sm:flex-row sm:justify-between sm:text-left">
           <Image
             src={logo.src}
