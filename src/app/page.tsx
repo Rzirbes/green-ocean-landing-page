@@ -65,8 +65,6 @@ export default function Home() {
       </main>
 
       <footer className="bg-ocean px-5 py-10 text-cream sm:px-8">
-        <WaveDivider className="absolute inset-x-0 bottom-0 h-16 w-full sm:h-24" />
-
         <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 text-center sm:flex-row sm:justify-between sm:text-left">
           <Image
             src={logo.src}
