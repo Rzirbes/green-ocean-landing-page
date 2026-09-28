@@ -16,7 +16,7 @@ export const siteConfig = {
   city: "Arroio do Sal",
   /** Data de lançamento exibida na página. */
   launch: {
-    label: "03.10",
+    label: "07.10",
     iso: "2026-10-03",
   },
 
