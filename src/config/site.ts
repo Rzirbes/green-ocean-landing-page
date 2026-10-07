@@ -30,6 +30,18 @@ export const siteConfig = {
     message: "Oi! Vi a Green Ocean e quero receber a primeira pista",
   },
 
+  /**
+   * A partir de `activatesAt`, o botão principal deixa de abrir o WhatsApp e
+   * passa a levar ao cardápio do Anota AI. A troca é feita em tempo de
+   * requisição e no navegador, então não precisa de novo deploy no horário.
+   * Sempre informe o fuso explicitamente (Brasília = -03:00).
+   */
+  order: {
+    url: "https://pedido.anota.ai/loja/green-ocean?f=msa",
+    label: "Faça seu pedido aqui!",
+    activatesAt: "2026-10-07T10:30:00-03:00",
+  },
+
   /** Opcional: defina INSTAGRAM_HANDLE para exibir o ícone do Instagram no rodapé. */
   instagramHandle: readEnv(process.env.INSTAGRAM_HANDLE),
 
